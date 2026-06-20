@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>male / os</title>
+  <style>
+    body { background:#000; color:#0f0; font-family:monospace; padding:20px; }
+  </style>
+</head>
+<body>
 
+<h2>male / os</h2>
+<pre id="out">RUN 1: os ist präsent, modi ist im Bund.</pre>
+
+<script>
+let ROOT = 0;
+let E8   = Array(8).fill(0);
+let E16  = Array(16).fill(0);
+
+function os_load() {
+  document.getElementById("out").textContent =
+    "os.load\nROOT=" + ROOT + "\nE8=" + E8.join("") + "\nE16=" + E16.join("");
+}
+</script>
+
+<button onclick="os_load()">os.load</button>
+
+</body>
+</html>
